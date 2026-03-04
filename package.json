@@ -11,6 +11,7 @@
   "scripts": {
     "dev": "bun run index.ts",
     "build": "bun build index.ts --compile --outfile dist/github-notify",
+    "build:macos": "bun build index.ts --compile --outfile dist/github-notify-macos",
     "build:win": "bun build index.ts --compile --outfile dist/github-notify.exe",
     "typecheck": "bunx tsc --noEmit"
   }
