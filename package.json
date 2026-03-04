@@ -1,0 +1,17 @@
+{
+  "name": "github-notify",
+  "private": true,
+  "bin": "./dist/github-notify",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "dev": "bun run index.ts",
+    "build": "bun build index.ts --compile --outfile dist/github-notify",
+    "build:win": "bun build index.ts --compile --outfile dist/github-notify.exe",
+    "typecheck": "bunx tsc --noEmit"
+  }
+}
